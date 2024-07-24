@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Us</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9900, #ffcc66);
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #ff9900;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #ffcc66;
+    }
+
+    .join-us {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      color: white;
+      text-align: center;
+    }
+
+    .join-us p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .join-us a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .join-us a:hover {
+      text-decoration: underline;
+    }
+
+    .arrow {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Register Here</h2>
+    <form action="/InsertAdm" method="post">
+      <label for="">Name</label>
+      <input type="text" name="name" placeholder="Enter your name" class="form-control">
+      <label for="">Email</label>
+      <input type="text" name="email" id="" placeholder="Enter your email" class="form-control">
+      <label for="">Password</label>
+      <input type="password" name="password" id="" placeholder="Password" class="form-control">
+      <label for="">Confirm Password</label>
+      <input type="password" name="confirmPassword" id="" placeholder="confirm Password" class="form-control">
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <div class="join-us">
+    <i class="arrow">&#9660;</i>
+    <h3>Join Us</h3>
+    <p>Subscribe Easy Tutorials YouTube Channel to watch more videos</p>
+    <a href="#">About Us</a>
+  </div>
+</body>
+</html>
